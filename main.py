@@ -6,6 +6,8 @@ from multiprocessing.dummy import Pool
 
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
+init(autoreset=True)
+
 def Banner():
     os.system("cls" if os.name == "nt" else "clear")
     __banner__ = f"""
